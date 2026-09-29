@@ -22,11 +22,11 @@ Given event logs (songs played, thumbs up/down, upgrades, downgrades, etc.), est
 ## Results
 | Metric (5-fold CV) | Logistic Regression | Random Forest |
 |---|---|---|
-| Recall | [X] | [X] |
-| F1 | [X] | [X] |
-| ROC-AUC | [X] | [X] |
+| Recall | 59.0% | 13.0% |
+| F1 | 35.7% | 16.4% |
+| ROC-AUC | 0.761 | 0.711 |
 
-Logistic Regression achieved higher recall, F1 and ROC-AUC than the Random Forest configuration used here.
+Logistic Regression identified far more churners (59% vs 13% recall) and had higher F1 and ROC-AUC than the Random Forest configuration used here. Absolute F1 is modest, which is expected with very few churners and behavior-only features.
 
 ## Key findings
 - Churn is not simply a low-activity problem: churned users can show substantial engagement.
